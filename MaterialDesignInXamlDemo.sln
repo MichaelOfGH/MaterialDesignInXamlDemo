@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1169
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialDesignInXamlDemo", "MaterialDesignInXamlDemo\MaterialDesignInXamlDemo.csproj", "{9E9CCF29-44C1-4590-A533-F384B4EA7B2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialDesignThemes.Wpf", "MaterialDesignThemes.Wpf\MaterialDesignThemes.Wpf.csproj", "{F079FB0A-A8ED-4216-B6A5-345756751A04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialDesignColors.Wpf", "MaterialDesignColors.Wpf\MaterialDesignColors.Wpf.csproj", "{90B53209-C60C-4655-B28D-A1B3E1044BA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransitionDemo", "TransitionDemo\TransitionDemo.csproj", "{8A96397D-00FA-43D3-8010-69F8E0124D9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		AppVeyor|Any CPU = AppVeyor|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E9CCF29-44C1-4590-A533-F384B4EA7B2B}.AppVeyor|Any CPU.ActiveCfg = Release|Any CPU
+		{9E9CCF29-44C1-4590-A533-F384B4EA7B2B}.AppVeyor|Any CPU.Build.0 = Release|Any CPU
+		{9E9CCF29-44C1-4590-A533-F384B4EA7B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E9CCF29-44C1-4590-A533-F384B4EA7B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E9CCF29-44C1-4590-A533-F384B4EA7B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E9CCF29-44C1-4590-A533-F384B4EA7B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|Any CPU.ActiveCfg = AppVeyor|Any CPU
+		{F079FB0A-A8ED-4216-B6A5-345756751A04}.AppVeyor|Any CPU.Build.0 = AppVeyor|Any CPU
+		{F079FB0A-A8ED-4216-B6A5-345756751A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F079FB0A-A8ED-4216-B6A5-345756751A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F079FB0A-A8ED-4216-B6A5-345756751A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F079FB0A-A8ED-4216-B6A5-345756751A04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90B53209-C60C-4655-B28D-A1B3E1044BA3}.AppVeyor|Any CPU.ActiveCfg = AppVeyor|Any CPU
+		{90B53209-C60C-4655-B28D-A1B3E1044BA3}.AppVeyor|Any CPU.Build.0 = AppVeyor|Any CPU
+		{90B53209-C60C-4655-B28D-A1B3E1044BA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90B53209-C60C-4655-B28D-A1B3E1044BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90B53209-C60C-4655-B28D-A1B3E1044BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90B53209-C60C-4655-B28D-A1B3E1044BA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A96397D-00FA-43D3-8010-69F8E0124D9B}.AppVeyor|Any CPU.ActiveCfg = Release|Any CPU
+		{8A96397D-00FA-43D3-8010-69F8E0124D9B}.AppVeyor|Any CPU.Build.0 = Release|Any CPU
+		{8A96397D-00FA-43D3-8010-69F8E0124D9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A96397D-00FA-43D3-8010-69F8E0124D9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A96397D-00FA-43D3-8010-69F8E0124D9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A96397D-00FA-43D3-8010-69F8E0124D9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF2F46C8-123A-498E-9C29-3F4AB55A8135}
+	EndGlobalSection
+EndGlobal
