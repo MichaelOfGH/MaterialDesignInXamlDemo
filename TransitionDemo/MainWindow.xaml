@@ -10,7 +10,7 @@
     Title="MainWindow" Height="450" Width="800">
     <Grid>
 
-        <control:Transitioner x:Name="CurrentTransitioner" SelectedIndex="0" >
+        <control:Transitioner x:Name="CurrentTransitioner" SelectedIndex="0" Visibility="Collapsed" >
             <control:TransitionerSlide  Background="Blue"  >
                 <control:TransitionerSlide.BackwardWipe>
                     <control:CircleWipe/>
@@ -28,6 +28,9 @@
             </control:TransitionerSlide>
         </control:Transitioner>
 
+
+
+        <local:Snackbar MessageQueue="{Binding SnackBarQuene}" />
 
         <Button 
             Width="120" Height="40" 

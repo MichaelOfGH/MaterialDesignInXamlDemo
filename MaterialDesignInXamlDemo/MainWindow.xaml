@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:MaterialDesignInXamlDemo"
+    xmlns:materialdesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     mc:Ignorable="d"
     Title="MainWindow" Height="450" Width="800"
     Loaded="Window_Loaded" 
@@ -14,6 +15,7 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        
         <TreeView  ItemsSource="{Binding IndexList}"  Visibility="Collapsed">
             <TreeView.ItemTemplate>
                 <HierarchicalDataTemplate DataType="{x:Type local:IndexModel}" ItemsSource="{Binding childindex}" >
@@ -30,15 +32,16 @@
             </TreeView.ItemTemplate>
         </TreeView>
 
-        <DataGrid 
+        <DataGrid  Visibility="Collapsed"
             ItemsSource="{Binding IndexList}" 
             Panel.ZIndex="5" >
-
-
         </DataGrid>
 
 
-        <Button Grid.Row="1" Style="{StaticResource MaterialDesignToolButton}" Content="MaterialDesign" ClipToBounds="True" />
+        <materialdesign:Snackbar MessageQueue="{Binding SnackbarQuene}" />
+
+
+        <Button Grid.Row="1" Style="{StaticResource MaterialDesignToolButton}" Content="MaterialDesign" ClipToBounds="True" Click="Button_Click" />
 
         <!--<StackPanel x:Name="BorderStackList" />
         <Button Width="48" Height="32" Content="添加" HorizontalAlignment="Right" Click="Button_Click" />-->

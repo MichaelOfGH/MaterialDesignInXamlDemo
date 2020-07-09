@@ -1,8 +1,7 @@
-﻿using System.Collections.ObjectModel;
+﻿using MaterialDesignThemes.Wpf;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Media;
 
 namespace MaterialDesignInXamlDemo
 {
@@ -22,6 +21,11 @@ namespace MaterialDesignInXamlDemo
             InitializeComponent();
             this.DataContext = this;
         }
+
+        /// <summary>
+        /// 提示
+        /// </summary>
+        public SnackbarMessageQueue SnackbarQuene { get; set; } = new SnackbarMessageQueue();
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
@@ -58,6 +62,7 @@ namespace MaterialDesignInXamlDemo
         Stopwatch sw = new Stopwatch();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            SnackbarQuene.Enqueue("这是一条临时消息",true);
             /*
             sw.Start();
             for (int i = 0; i < 200; i++)

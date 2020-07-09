@@ -10,10 +10,17 @@ namespace TransitionDemo
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = this;
         }
+
+        public SnackbarMessageQueue SnackBarQuene { get; set; } = new SnackbarMessageQueue();
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            SnackBarQuene.Enqueue("消息", true);
+
+
             if (CurrentTransitioner.SelectedIndex + 1 == CurrentTransitioner.Items.Count)
             {
                 CurrentTransitioner.SelectedIndex = 0;

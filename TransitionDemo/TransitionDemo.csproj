@@ -63,10 +63,19 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="AttachProperties\RippleAssist.cs" />
     <Compile Include="Control\Base\ITransitionEffect.cs" />
     <Compile Include="Control\Base\ITransitionEffectSubject.cs" />
     <Compile Include="Control\Base\ITransitionWipe.cs" />
     <Compile Include="Control\Base\IZIndexController.cs" />
+    <Compile Include="Control\Ripple\Ripple.cs" />
+    <Compile Include="Control\SnackBar\ISnackbarMessageQueue.cs" />
+    <Compile Include="Control\SnackBar\Snackbar.cs" />
+    <Compile Include="Control\SnackBar\SnackbarMessage.cs" />
+    <Compile Include="Control\SnackBar\SnackbarMessageEventArgs.cs" />
+    <Compile Include="Control\SnackBar\SnackbarMessageQueue.cs" />
+    <Compile Include="Control\SnackBar\SnackbarMessageQueueItem.cs" />
+    <Compile Include="Control\SnackBar\SnackbarMessageTypeConverter.cs" />
     <Compile Include="Control\Transitioner.cs" />
     <Compile Include="Control\TransitionerSlide.cs" />
     <Compile Include="Control\TransitionerSlideState.cs" />
@@ -77,11 +86,26 @@
     <Compile Include="Control\Transitions\TransitionEffect.cs" />
     <Compile Include="Control\Transitions\TransitionEffectBase.cs" />
     <Compile Include="Control\Transitions\TransitionEffectKind.cs" />
+    <Compile Include="Converter\Common\MathConverter.cs" />
+    <Compile Include="Converter\Common\MathMultipleConverter.cs" />
+    <Compile Include="Converter\Common\NullableToVisibilityConverter.cs" />
     <Compile Include="Converter\TransitionEffectTypeConverter.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Style\HyperLink.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Style\SnackBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Style\TextBlock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Style\Transitioner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -112,6 +136,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Converter\SnackBar\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
