@@ -8,10 +8,11 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/TransitionDemo;component/Style/HyperLink.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/TransitionDemo;component/Style/TextBlock.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/TransitionDemo;component/Style/RadioButton.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/TransitionDemo;component/Style/Transitioner.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/TransitionDemo;component/Style/SnackBar.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
-         
+
     </Application.Resources>
 </Application>
